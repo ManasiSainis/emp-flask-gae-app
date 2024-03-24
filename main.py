@@ -5,7 +5,8 @@ from google.cloud import storage
 
 app = Flask(__name__)
 
-#https://towardsdatascience.com/creating-restful-apis-using-flask-and-python-655bad51b24
+
+# https://towardsdatascience.com/creating-restful-apis-using-flask-and-python-655bad51b24
 @app.route("/call-gcs")
 def call_storage():
     client = storage.Client()
